@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy · Rhythm Punch</title>
+<meta name="theme-color" content="#2A0C21">
+<link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/galmuri@2.40.3/dist/galmuri.css" rel="stylesheet">
+<style>
+  :root {
+    --bg: #2A0C21; --surface: #4A1539; --line: rgba(255, 241, 230, 0.14);
+    --pink: #FF3260; --pink-soft: #FF7A98; --text: #FFF1E6; --muted: #D9BFCB;
+    --pixel: 'Galmuri11', 'DotGothic16', monospace;
+    --logo: 'Press Start 2P', 'Galmuri11', monospace;
+    --body: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Hiragino Sans', 'Noto Sans KR', 'Noto Sans JP', 'Segoe UI', sans-serif;
+  }
+  :lang(ja) { --pixel: 'DotGothic16', 'Galmuri11', monospace; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: var(--body); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+  a { color: var(--pink-soft); word-break: break-word; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 0 16px; }
+  header { border-bottom: 1px solid var(--line); }
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); }
+  .brand img { width: 34px; height: 34px; border-radius: 8px; }
+  .brand span { font-family: var(--logo); font-size: 12px; letter-spacing: 1px; white-space: nowrap; }
+  .lang { display: flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; gap: 2px; flex-shrink: 0; }
+  .lang button { background: none; border: 0; color: var(--muted); font: 600 13px var(--body); padding: 5px 10px; border-radius: 999px; cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--pink); color: #fff; }
+  main { padding: 48px 0 72px; }
+  h1 { font-family: var(--pixel); font-size: clamp(28px, 5vw, 38px); line-height: 1.3; margin-bottom: 8px; }
+  .meta { color: var(--muted); margin-bottom: 36px; }
+  .doc[hidden] { display: none; }
+  .doc section { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 24px 24px 20px; margin-bottom: 14px; }
+  h2 { font-size: 19px; margin-bottom: 10px; }
+  p, li { color: var(--muted); font-size: 16px; }
+  p + p { margin-top: 10px; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li + li { margin-top: 4px; }
+  strong { color: var(--text); }
+  footer { border-top: 1px solid var(--line); padding: 32px 0 48px; color: var(--muted); font-size: 15px; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  @media (max-width: 560px) { .brand span { font-size: 10px; } .doc section { padding: 20px 18px 16px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="./"><img src="assets/icon.png" alt=""><span>RHYTHM PUNCH</span></a>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ko">한국어</button>
+      <button type="button" data-lang="ja">日本語</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ================= 한국어 ================= -->
+<div class="doc" data-doc="ko">
+  <h1>개인정보처리방침</h1>
+  <p class="meta">Rhythm Punch · 시행일: 2026년 10월 11일</p>
+
+  <section>
+    <h2>1. 개요</h2>
+    <p>Pixelab(이하 "개발자")은 iOS 게임 <strong>Rhythm Punch</strong>(이하 "앱")를 제공합니다. 이 방침은 앱이 어떤 정보를 다루고, 어떤 외부 서비스가 정보를 처리하는지 설명합니다.</p>
+    <p>앱은 <strong>회원가입이 없고</strong>, 개발자는 이름·이메일·전화번호 같은 개인정보를 직접 수집하지 않으며, 별도의 서버를 운영하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>2. 기기에만 저장되는 정보</h2>
+    <p>다음 정보는 사용자의 기기 안에만 저장되며 개발자에게 전송되지 않습니다.</p>
+    <ul>
+      <li>최고 기록</li>
+      <li>설정값 (사운드, 햅틱, 판정 캘리브레이션 등)</li>
+      <li>획득한 캐릭터</li>
+      <li>무료 플레이 충전 시각과 추가 플레이 횟수</li>
+    </ul>
+    <p>앱을 삭제하면 이 정보도 함께 삭제됩니다.</p>
+  </section>
+
+  <section>
+    <h2>3. 광고 (Google AdMob)</h2>
+    <p>앱은 추가 플레이를 위한 보상형 광고를 보여 주기 위해 Google LLC의 <strong>AdMob</strong>을 사용합니다. 광고를 제공하고 성과를 측정하기 위해 Google은 다음과 같은 정보를 수집·처리할 수 있습니다.</p>
+    <ul>
+      <li>광고 식별자(IDFA) — 사용자가 추적을 허용한 경우에만</li>
+      <li>IP 주소와 이를 바탕으로 한 대략적인 위치</li>
+      <li>기기 정보 (기기 모델, OS 버전, 언어 등)</li>
+      <li>광고 노출·시청·클릭 같은 광고 상호작용 정보</li>
+      <li>오류 및 성능 진단 정보</li>
+    </ul>
+    <p>Google의 정보 처리 방식은 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a>과 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google이 파트너 사이트·앱의 정보를 사용하는 방식</a>에서 확인할 수 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>4. 추적 허용과 광고 동의</h2>
+    <ul>
+      <li><strong>앱 추적 투명성(ATT):</strong> 처음 실행할 때 iOS가 "앱 추적 허용" 여부를 묻습니다. 허용하지 않아도 게임은 그대로 이용할 수 있으며, 이 경우 맞춤형이 아닌 광고가 표시됩니다. 선택은 iOS <em>설정 › 개인정보 보호 및 보안 › 추적</em>에서 언제든 바꿀 수 있습니다.</li>
+      <li><strong>유럽경제지역·영국·스위스:</strong> 해당 지역 사용자에게는 Google의 동의 화면이 표시됩니다. 동의 내용은 앱의 설정 화면에 있는 <strong>AD PRIVACY</strong>에서 언제든 변경할 수 있습니다.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Game Center</h2>
+    <p>리더보드를 이용하면 점수와 Game Center 닉네임이 Apple의 Game Center로 전송됩니다. 이 정보는 Apple이 처리하며 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 개인정보처리방침</a>이 적용됩니다. Game Center에 로그인하지 않으면 전송되지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>6. 게임 엔진 (Unity)</h2>
+    <p>앱은 Unity Technologies의 Unity 엔진으로 만들어졌습니다. Unity 엔진은 기기 모델, OS 버전, 그래픽 성능 같은 익명의 하드웨어 통계를 Unity Technologies에 보낼 수 있습니다. 이 정보로 사용자를 식별하지 않습니다. 자세한 내용은 <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity 개인정보처리방침</a>을 참고하세요.</p>
+  </section>
+
+  <section>
+    <h2>7. 아동의 개인정보</h2>
+    <p>앱은 13세 미만 아동을 주 대상으로 하지 않으며, 개발자는 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+  </section>
+
+  <section>
+    <h2>8. 정보의 보관과 삭제</h2>
+    <p>기기에 저장된 정보는 앱을 삭제하면 지워집니다. Google과 Apple이 처리하는 정보는 각 회사의 정책에 따라 보관·삭제되며, 해당 회사의 설정 페이지에서 열람·삭제를 요청할 수 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>9. 방침의 변경</h2>
+    <p>이 방침이 바뀌면 이 페이지에 새 내용과 시행일을 게시합니다.</p>
+  </section>
+
+  <section>
+    <h2>10. 문의</h2>
+    <p>개인정보와 관련한 문의는 <a href="mailto:metyasoft@gmail.com">metyasoft@gmail.com</a>으로 보내 주세요.</p>
+  </section>
+</div>
+
+<!-- ================= 日本語 ================= -->
+<div class="doc" data-doc="ja" hidden>
+  <h1>プライバシーポリシー</h1>
+  <p class="meta">Rhythm Punch · 施行日：2026年10月11日</p>
+
+  <section>
+    <h2>1. 概要</h2>
+    <p>Pixelab（以下「開発者」）は、iOS ゲーム <strong>Rhythm Punch</strong>（以下「本アプリ」）を提供しています。本ポリシーは、本アプリが扱う情報と、情報を処理する外部サービスについて説明します。</p>
+    <p>本アプリには<strong>会員登録がなく</strong>、開発者は氏名・メールアドレス・電話番号などの個人情報を直接収集しません。また、独自のサーバーも運用していません。</p>
+  </section>
+
+  <section>
+    <h2>2. 端末内にのみ保存される情報</h2>
+    <p>以下の情報はユーザーの端末内にのみ保存され、開発者には送信されません。</p>
+    <ul>
+      <li>ハイスコア</li>
+      <li>設定（サウンド、ハプティクス、判定キャリブレーションなど）</li>
+      <li>獲得したキャラクター</li>
+      <li>無料プレイの回復時刻と追加プレイ回数</li>
+    </ul>
+    <p>本アプリを削除すると、これらの情報も削除されます。</p>
+  </section>
+
+  <section>
+    <h2>3. 広告（Google AdMob）</h2>
+    <p>本アプリは、追加プレイのためのリワード広告を表示するために Google LLC の <strong>AdMob</strong> を使用しています。広告の配信と効果測定のため、Google は次のような情報を収集・処理することがあります。</p>
+    <ul>
+      <li>広告識別子（IDFA）— ユーザーがトラッキングを許可した場合のみ</li>
+      <li>IP アドレスと、それに基づくおおよその位置情報</li>
+      <li>端末情報（機種、OS バージョン、言語など）</li>
+      <li>広告の表示・視聴・タップなどの操作情報</li>
+      <li>エラーおよびパフォーマンスの診断情報</li>
+    </ul>
+    <p>Google による情報の取り扱いについては、<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a>および<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google によるパートナーのサイトやアプリの情報の使用</a>をご確認ください。</p>
+  </section>
+
+  <section>
+    <h2>4. トラッキングの許可と広告への同意</h2>
+    <ul>
+      <li><strong>App Tracking Transparency（ATT）：</strong>初回起動時に、iOS が「App からのトラッキング要求を許可」するかを確認します。許可しなくてもゲームはそのまま利用でき、その場合はパーソナライズされていない広告が表示されます。選択は iOS の<em>設定 › プライバシーとセキュリティ › トラッキング</em>からいつでも変更できます。</li>
+      <li><strong>欧州経済領域・英国・スイス：</strong>該当地域のユーザーには Google の同意画面が表示されます。同意内容は、本アプリの設定画面にある <strong>AD PRIVACY</strong> からいつでも変更できます。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Game Center</h2>
+    <p>ランキングを利用すると、スコアと Game Center のニックネームが Apple の Game Center に送信されます。この情報は Apple が処理し、<a href="https://www.apple.com/jp/legal/privacy/" target="_blank" rel="noopener">Apple のプライバシーポリシー</a>が適用されます。Game Center にサインインしていない場合は送信されません。</p>
+  </section>
+
+  <section>
+    <h2>6. ゲームエンジン（Unity）</h2>
+    <p>本アプリは Unity Technologies の Unity エンジンで制作されています。Unity エンジンは、機種、OS バージョン、グラフィック性能などの匿名のハードウェア統計を Unity Technologies に送信することがあります。この情報によってユーザーが特定されることはありません。詳しくは <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity のプライバシーポリシー</a>をご覧ください。</p>
+  </section>
+
+  <section>
+    <h2>7. 子どもの個人情報</h2>
+    <p>本アプリは13歳未満の子どもを主な対象としておらず、開発者が子どもの個人情報を意図的に収集することはありません。</p>
+  </section>
+
+  <section>
+    <h2>8. 情報の保存と削除</h2>
+    <p>端末に保存された情報は、本アプリを削除すると消去されます。Google および Apple が処理する情報は各社のポリシーに従って保存・削除され、各社の設定ページから閲覧や削除を依頼できます。</p>
+  </section>
+
+  <section>
+    <h2>9. 本ポリシーの変更</h2>
+    <p>本ポリシーを変更する場合は、このページに新しい内容と施行日を掲載します。</p>
+  </section>
+
+  <section>
+    <h2>10. お問い合わせ</h2>
+    <p>個人情報に関するお問い合わせは <a href="mailto:metyasoft@gmail.com">metyasoft@gmail.com</a> までお送りください。</p>
+  </section>
+</div>
+
+<!-- ================= English ================= -->
+<div class="doc" data-doc="en" hidden>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Rhythm Punch · Effective October 11, 2026</p>
+
+  <section>
+    <h2>1. Overview</h2>
+    <p>Pixelab ("we") provides the iOS game <strong>Rhythm Punch</strong> (the "App"). This policy explains what information the App handles and which third-party services process information.</p>
+    <p>The App has <strong>no accounts</strong>. We do not collect personal information such as your name, email address or phone number, and we do not run any servers of our own.</p>
+  </section>
+
+  <section>
+    <h2>2. Information stored only on your device</h2>
+    <p>The following is stored only on your device and is never sent to us:</p>
+    <ul>
+      <li>High scores</li>
+      <li>Settings (sound, haptics, timing calibration and so on)</li>
+      <li>Unlocked characters</li>
+      <li>When your next free play recharges, and your bonus plays</li>
+    </ul>
+    <p>Deleting the App deletes this information.</p>
+  </section>
+
+  <section>
+    <h2>3. Advertising (Google AdMob)</h2>
+    <p>The App uses <strong>AdMob</strong> by Google LLC to show rewarded ads that grant extra plays. To serve ads and measure their performance, Google may collect and process:</p>
+    <ul>
+      <li>The advertising identifier (IDFA) — only if you allow tracking</li>
+      <li>Your IP address and the approximate location derived from it</li>
+      <li>Device information (model, OS version, language and similar)</li>
+      <li>Ad interactions such as impressions, views and taps</li>
+      <li>Crash and performance diagnostics</li>
+    </ul>
+    <p>See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>.</p>
+  </section>
+
+  <section>
+    <h2>4. Tracking permission and ad consent</h2>
+    <ul>
+      <li><strong>App Tracking Transparency (ATT):</strong> on first launch iOS asks whether to allow the App to track you. The game works the same either way; if you decline, you see non-personalized ads. You can change this at any time in iOS <em>Settings › Privacy &amp; Security › Tracking</em>.</li>
+      <li><strong>EEA, UK and Switzerland:</strong> users in these regions see Google's consent form. You can change your choices at any time from <strong>AD PRIVACY</strong> in the App's Settings screen.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Game Center</h2>
+    <p>If you use the leaderboard, your score and Game Center nickname are sent to Apple's Game Center, where Apple processes them under the <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>. Nothing is sent if you are not signed in to Game Center.</p>
+  </section>
+
+  <section>
+    <h2>6. Game engine (Unity)</h2>
+    <p>The App is built with the Unity engine by Unity Technologies. The engine may send anonymous hardware statistics — such as device model, OS version and graphics capability — to Unity Technologies. This information does not identify you. See the <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a>.</p>
+  </section>
+
+  <section>
+    <h2>7. Children's privacy</h2>
+    <p>The App is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+  </section>
+
+  <section>
+    <h2>8. Retention and deletion</h2>
+    <p>Information stored on your device is removed when you delete the App. Information processed by Google and Apple is kept and deleted under their own policies, and you can ask them to access or delete it through their account settings.</p>
+  </section>
+
+  <section>
+    <h2>9. Changes to this policy</h2>
+    <p>If this policy changes, we will post the new version and its effective date on this page.</p>
+  </section>
+
+  <section>
+    <h2>10. Contact</h2>
+    <p>For privacy questions, email <a href="mailto:metyasoft@gmail.com">metyasoft@gmail.com</a>.</p>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Pixelab · Rhythm Punch</span>
+    <a href="./" id="back">← Rhythm Punch</a>
+  </div>
+</footer>
+
+<script>
+  const LANGS = ['ko', 'ja', 'en'];
+  function pickLang() {
+    const q = new URLSearchParams(location.search).get('lang');
+    if (LANGS.includes(q)) return q;
+    try { const s = localStorage.getItem('rp.lang'); if (LANGS.includes(s)) return s; } catch (e) {}
+    const nav = (navigator.language || 'en').slice(0, 2);
+    return LANGS.includes(nav) ? nav : 'en';
+  }
+  function applyLang(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll('.doc').forEach(d => { d.hidden = d.dataset.doc !== lang; });
+    document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+    document.title = { ko: '개인정보처리방침 · Rhythm Punch', ja: 'プライバシーポリシー · Rhythm Punch', en: 'Privacy Policy · Rhythm Punch' }[lang];
+    try { localStorage.setItem('rp.lang', lang); } catch (e) {}
+  }
+  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
+  applyLang(pickLang());
+</script>
+</body>
+</html>
