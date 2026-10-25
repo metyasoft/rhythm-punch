@@ -180,6 +180,13 @@
   .char .stand img { width: 82%; height: auto; margin-bottom: 6%; }
   .char b { display: block; font-family: var(--logo); font-size: 11px; letter-spacing: 1px; margin-bottom: 4px; }
   .char span { color: var(--muted); font-size: 14px; }
+  .char.locked .stand { background: #1D1023; border-color: rgba(140, 110, 190, 0.45); align-items: center; }
+  .char.locked .q { font-family: var(--logo); font-size: clamp(30px, 4vw, 48px); color: #8A74B8; text-shadow: 0 0 18px rgba(138, 116, 184, 0.6); }
+  .char.locked b { color: #8A74B8; }
+  .mini-lock {
+    width: 44px; height: 44px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center;
+    background: #1D1023; border: 2px solid rgba(140, 110, 190, 0.55); color: #8A74B8; font: 16px var(--logo);
+  }
   .note { margin-top: 26px; color: var(--muted); font-size: 15.5px; }
   .note strong { color: var(--gold); }
 
@@ -299,7 +306,7 @@
           <h3 data-i18n="f4_t"></h3><p data-i18n="f4_d"></p>
         </div>
         <div class="feature">
-          <div class="ico"><img class="px" src="assets/sprites/grumpy-fellow.png" alt=""><img class="px" src="assets/sprites/dino.png" alt=""></div>
+          <div class="ico"><img class="px" src="assets/sprites/grumpy-fellow.png" alt=""><span class="mini-lock" aria-hidden="true">?</span><span class="mini-lock" aria-hidden="true">?</span></div>
           <h3 data-i18n="f5_t"></h3><p data-i18n="f5_d"></p>
         </div>
         <div class="feature">
@@ -337,10 +344,10 @@
       <p class="sub" data-i18n="chars_sub"></p>
       <div class="roster">
         <div class="char"><div class="stand"><img class="px" src="assets/sprites/grumpy-fellow.png" alt="Grumpy Fellow"></div><b>GRUMPY FELLOW</b><span data-i18n="c_grumpy"></span></div>
-        <div class="char"><div class="stand"><img class="px" src="assets/sprites/dino.png" alt="Dino"></div><b>DINO</b><span data-i18n="c_dino"></span></div>
-        <div class="char"><div class="stand"><img class="px" src="assets/sprites/curly-gunner.png" alt="Curly Gunner"></div><b>CURLY GUNNER</b><span data-i18n="c_curly"></span></div>
-        <div class="char"><div class="stand"><img class="px" src="assets/sprites/titan-tot.png" alt="Titan Tot"></div><b>TITAN TOT</b><span data-i18n="c_titan"></span></div>
-        <div class="char"><div class="stand"><img class="px" src="assets/sprites/mu.png" alt="Mu"></div><b>MU</b><span data-i18n="c_mu"></span></div>
+        <div class="char locked"><div class="stand"><span class="q" aria-hidden="true">?</span></div><b>? ? ?</b><span data-i18n="c_locked"></span></div>
+        <div class="char locked"><div class="stand"><span class="q" aria-hidden="true">?</span></div><b>? ? ?</b><span data-i18n="c_locked"></span></div>
+        <div class="char locked"><div class="stand"><span class="q" aria-hidden="true">?</span></div><b>? ? ?</b><span data-i18n="c_locked"></span></div>
+        <div class="char locked"><div class="stand"><span class="q" aria-hidden="true">?</span></div><b>? ? ?</b><span data-i18n="c_locked"></span></div>
       </div>
       <p class="note" data-i18n-html="chars_note"></p>
     </div>
@@ -394,13 +401,13 @@ const I18N = {
     f2_t: '시원한 타격감', f2_d: '박자에 딱 맞는 순간, 타격음과 햅틱 진동, 화면 흔들림이 한꺼번에 터집니다.',
     f3_t: '피버 타임', f3_d: 'PERFECT를 끊김 없이 이어 가면 네온과 색종이가 쏟아지는 축제 속에서 점수가 두 배!',
     f4_t: '예고되는 기믹', f4_d: '블랙아웃, 등 뒤에서 오는 역풍, 스트로브, 폭탄 소나기. 항상 미리 알려 주니 소리에 집중하세요.',
-    f5_t: '캐릭터 수집', f5_d: '권투 선수에서 공룡까지, 다섯 명의 파이터를 모으세요. 공격 모션이 모두 다릅니다.',
+    f5_t: '캐릭터 수집', f5_d: '숨겨진 파이터 넷이 당신을 기다립니다. 누가 나올지는 직접 확인해 보세요. 공격 모션도 모두 다릅니다.',
     f6_t: '정확한 판정', f6_d: '블루투스 이어폰도 캘리브레이션으로 맞추고, 120Hz ProMotion으로 부드럽게. Game Center 리더보드 지원.',
     objects_title: '무엇이 날아올까?', objects_sub: '대부분은 탭 한 번이면 됩니다. 하지만 몇몇은 다르게 상대해야 해요.',
     o_rock: '돌멩이', o_pot: '화분', o_ball: '야구공', o_barrel: '드럼통', o_ufo: 'UFO', o_bird: '새',
     o_bomb: '폭탄', o_heart: '하트', o_ghost: '유령 항아리', o_safe: '금고',
-    chars_title: '함께 싸울 동료들', chars_sub: '그럼피 펠로우로 시작해, 플레이하며 새로운 파이터를 만나 보세요.',
-    c_grumpy: '권투 선수', c_dino: '공룡', c_curly: '총잡이', c_titan: '꼬마 거인', c_mu: '수수께끼의 생물',
+    chars_title: '함께 싸울 동료들', chars_sub: '권투 선수 그럼피 펠로우로 시작합니다. 나머지 넷은 비밀! 플레이하며 직접 만나 보세요.',
+    c_grumpy: '권투 선수', c_locked: '잠겨 있음',
     chars_note: '<strong>모든 스테이지를 한 바퀴 돌면</strong> 새 캐릭터가 날아옵니다. 정확히 쳐서 잡으세요!',
     stages_title: '세계를 도는 무대', stages_sub: '이집트의 오벨리스크에서 우주 정거장까지. 스테이지가 바뀔 때마다 새로운 픽셀 아트 무대가 펼쳐집니다.',
     faq_title: '자주 묻는 질문',
@@ -423,13 +430,13 @@ const I18N = {
     f2_t: '爽快な打撃感', f2_d: 'ビートにぴったり合った瞬間、打撃音とハプティクス、画面の揺れが一気にはじけます。',
     f3_t: 'フィーバータイム', f3_d: 'PERFECT を途切れずにつなげば、ネオンと紙吹雪のお祭りでスコア2倍！',
     f4_t: '予告つきギミック', f4_d: 'ブラックアウト、背後からの向かい風、ストロボ、ボムシャワー。必ず予告されるので、音に集中しよう。',
-    f5_t: 'キャラクター収集', f5_d: 'ボクサーから恐竜まで、5人のファイターを集めよう。攻撃モーションはみんな違います。',
+    f5_t: 'キャラクター収集', f5_d: '4人の隠しファイターが待っています。誰が出てくるかは、自分の目で確かめよう。攻撃モーションもみんな違います。',
     f6_t: '正確な判定', f6_d: 'Bluetooth イヤホンもキャリブレーションで調整。120Hz ProMotion でなめらか。Game Center ランキング対応。',
     objects_title: '何が飛んでくる？', objects_sub: 'ほとんどはタップ1回でOK。でも、いくつかは別の対処が必要です。',
     o_rock: '石ころ', o_pot: '植木鉢', o_ball: '野球ボール', o_barrel: 'ドラム缶', o_ufo: 'UFO', o_bird: '鳥',
     o_bomb: '爆弾', o_heart: 'ハート', o_ghost: 'ゴーストの壺', o_safe: '金庫',
-    chars_title: '一緒に戦う仲間たち', chars_sub: 'グランピー・フェロウから始めて、プレイしながら新しいファイターに出会おう。',
-    c_grumpy: 'ボクサー', c_dino: '恐竜', c_curly: 'ガンナー', c_titan: 'ちびっこ巨人', c_mu: 'なぞの生きもの',
+    chars_title: '一緒に戦う仲間たち', chars_sub: 'ボクサーのグランピー・フェロウからスタート。残りの4人はひみつ！プレイしながら出会おう。',
+    c_grumpy: 'ボクサー', c_locked: 'ロック中',
     chars_note: '<strong>すべてのステージを一周すると</strong>、新しいキャラクターが飛んできます。しっかり打ってつかまえよう！',
     stages_title: '世界をめぐる舞台', stages_sub: 'エジプトのオベリスクから宇宙ステーションまで。ステージが変わるたびに、新しいドット絵の舞台が広がります。',
     faq_title: 'よくある質問',
@@ -452,13 +459,13 @@ const I18N = {
     f2_t: 'Satisfying impact', f2_d: 'Hit right on the beat and you get it all at once: a crunchy hit sound, a haptic kick and a screen shake.',
     f3_t: 'Fever Time', f3_d: 'Chain PERFECT hits without a break for a neon, confetti-filled party — and double points.',
     f4_t: 'Gimmicks, always announced', f4_d: 'Blackouts, a headwind at your back, strobes and bomb showers. You always get a warning, so trust your ears.',
-    f5_t: 'Collect characters', f5_d: 'From a boxer to a dinosaur, collect five fighters — each with its own attack moves.',
+    f5_t: 'Collect characters', f5_d: 'Four secret fighters are waiting. Who are they? Play to find out — each has its own attack moves.',
     f6_t: 'Timing you can trust', f6_d: 'Calibrate for Bluetooth headphones, enjoy 120Hz ProMotion smoothness, and climb the Game Center leaderboard.',
     objects_title: "What's flying in?", objects_sub: 'Most things need just one tap. A few need a different answer.',
     o_rock: 'Rock', o_pot: 'Flower pot', o_ball: 'Baseball', o_barrel: 'Barrel', o_ufo: 'UFO', o_bird: 'Bird',
     o_bomb: 'Bomb', o_heart: 'Heart', o_ghost: 'Ghost jar', o_safe: 'Safe',
-    chars_title: 'Your fighting crew', chars_sub: 'Start as Grumpy Fellow and meet new fighters as you play.',
-    c_grumpy: 'Boxer', c_dino: 'Dinosaur', c_curly: 'Gunner', c_titan: 'Tiny giant', c_mu: 'Mystery creature',
+    chars_title: 'Your fighting crew', chars_sub: 'You start as Grumpy Fellow the boxer. The other four are a secret — meet them as you play.',
+    c_grumpy: 'Boxer', c_locked: 'Locked',
     chars_note: '<strong>Make it around every stage</strong> and a new character comes flying in. Hit it cleanly to catch it!',
     stages_title: 'A world tour of stages', stages_sub: 'From an Egyptian obelisk to a space station — every new stage brings a new pixel art scene.',
     faq_title: 'FAQ',
